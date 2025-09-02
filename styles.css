@@ -1,0 +1,193 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #1a73e8;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5px;
+    background: linear-gradient(180deg, #1a73e8, #ffffff);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+h1 {
+    color: #1a73e8;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 12px;
+    margin: 3px 0;
+    border-bottom: 1px solid #1a73e8;
+    padding-bottom: 1px;
+}
+
+h3 {
+    color: #333;
+    font-size: 11px;
+    margin: 3px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.col {
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin: 2px 0;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 4px;
+    margin-top: 1px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 11px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: right;
+    font-size: 11px;
+}
+
+th {
+    background-color: #1a73e8;
+    color: white;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 3px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 11px;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.signature-box {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    margin: 5px auto;
+}
+
+@media print {
+    body {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+    #formContainer {
+        display: none !important;
+    }
+    .print-container {
+        display: block;
+        max-width: 100%;
+        padding: 2mm;
+    }
+    header {
+        margin-bottom: 2mm;
+        padding: 2mm;
+    }
+    .logo {
+        max-width: 50px;
+    }
+    h1 {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 11px;
+        margin: 2mm 0;
+    }
+    h3 {
+        font-size: 10px;
+        margin: 1mm 0;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+        width: 48%;
+    }
+    table, th, td {
+        font-size: 9px;
+        padding: 2mm;
+    }
+    p, span {
+        font-size: 9px;
+        margin: 1mm 0;
+    }
+    .signature-box {
+        width: 150px;
+        height: 50px;
+        border: 1px solid #000;
+        margin: 3mm auto;
+    }
+    @page {
+        size: A4;
+        margin: 2mm;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+    .print-container {
+        min-height: 297mm;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 8px;
+        color: #666;
+        border-top: 1px solid #1a73e8;
+        padding-top: 1mm;
+    }
+}
